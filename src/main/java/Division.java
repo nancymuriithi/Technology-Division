@@ -1,5 +1,3 @@
-//import com.sun.org.apache.xpath.internal.operations.Div;
-
 import java.util.ArrayList;
 
 public class Division {
@@ -11,6 +9,7 @@ public class Division {
     private String responsibilities;
     private static ArrayList<Division>  instances = new ArrayList<>();
     private Boolean created;
+    
 //, String section, String staff, String role, String responsibilities
     public Division(String department, String section, String staff, String role, String responsibilities) {
         this.department = department;
@@ -67,15 +66,5 @@ public class Division {
         instances.remove(id - 1);
     }
 
-//    public boolean getShape() {
-//        return shape;
-//    }
-//
-//    public boolean isRectSquare() {
-//        if (height == width) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
+
 }
