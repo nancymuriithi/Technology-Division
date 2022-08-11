@@ -1,0 +1,38 @@
+{{#partial "content"}}
+
+    <h1>Add a new Department Detail!</h1>
+
+    <form action="/posts/new" method="post">
+<!--        <label for="department">Department Name</label>-->
+<!--        <input id="department" name="department" type="text">-->
+
+<!--        <button type="submit" class="btn btn-default">Add new details</button>-->
+<!--    </form>-->
+    <fieldset>
+        <legend>Staff information:</legend>
+        <div class="form-group">
+            <label for="staff">Name&nbsp&nbsp&nbsp&nbsp</label>
+            <input id="staff_name" name="staff_name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="department">Department&nbsp&nbsp&nbsp&nbsp</label>
+            <input id="department" name="department" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="section">Section&nbsp&nbsp&nbsp&nbsp</label>
+            <input id="section" name="section" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="role">Role&nbsp&nbsp&nbsp&nbsp</label>
+            <input id="role" name="role" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+            <label for="responsibilities">Responsibilities&nbsp</label>
+            <input id="responsibilities" name="responsibilities" class="form-control" type="textarea" rows="20" >
+        </div>
+        <button type="submit" class="btn-info">Update!</button>
+    </fieldset>
+    </form>
+{{/partial}}
+
+{{> layout.hbs}}

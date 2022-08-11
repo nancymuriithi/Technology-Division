@@ -1,0 +1,58 @@
+<!--{{#block "header"}}-->
+
+<!--{{/block}}-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Tech-division{{/block}}</title>
+<!--    <style>-->
+<!--        /*body {*/-->
+<!--        /*    background-image: url("images/white-apple-Magic-bg.jpg");*/-->
+<!--        /*    background-repeat: no-repeat;*/-->
+<!--        /*    background-size: cover;*/-->
+<!--        /*}*/-->
+
+<!--    </style>-->
+    <link href="/main.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/">See All Departments</a></li>
+    <li role="presentation"><a href="/posts/new">Add a New Department Detail</a></li>
+
+
+</ul>
+<div class="container">
+    <!--begin main template-->
+    <div class="page-header">
+        <h1>The Safaricom Technology Division.
+            <small><span style="color:green">We find solutions!</span></small></h1>
+        <div class="row">
+            <div>
+
+                <span><iframe width="70%" height="60%" src="https://www.youtube.com/embed/1ykIPO5g7MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+                <br><em>Feel free to listen to some Work Jazz...</em>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-12">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"><a href="/posts/delete"><button class="btn-danger"> DELETE ALL</button></a></p>
+        </div>
+    </footer>
+    </body>
+    </html>
+{{/block}}

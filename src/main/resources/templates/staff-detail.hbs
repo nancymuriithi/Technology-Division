@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+    <h1>Staff List!</h1>
+    <p>Here's a list of all the staffs created. To add to the list, please use the link provided for adding a new staff.</p>
+
+    <h3>Details</h3>
+
+    {{#if division}}
+        {{#each division }}
+            <p>Current staff:</p>
+            <p>Name: {{ division.staff_name }}</p>
+            <p>Department: {{ division.department }}</p>
+            <p>Section: {{ section }}</p>
+            <p>Role: {{ role }}</p>
+            <p>Responsibilities: {{ responsibilities }}</p>
+        {{/each}}
+    {{else}}
+        <p>No staff added yet!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

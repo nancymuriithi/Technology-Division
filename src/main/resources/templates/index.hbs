@@ -1,0 +1,23 @@
+{{#partial "content"}}
+
+    <h1>Department List!</h1>
+    <p>Here's a list of all the division's departments. To add to the list, please use the link provided for adding a new department.</p>
+
+    <h3>Details</h3>
+
+    <hr>
+    {{#if division}}
+        {{#each division }}
+            <p>Department detail:</p>
+            <p>{{department}} <a href="/posts/{{id}}">read more...</a></p>
+            <a href="/posts/{{id}}/update">Edit this Department</a><br>
+            <a href="/posts/{{id}}/delete">DELETE this Department (no undo)</a>
+        {{/each}}
+    {{else}}
+        <p>No departments added yet!</p>
+    {{/if}}
+
+
+{{/partial}}
+
+{{> layout.hbs}}

@@ -1,0 +1,30 @@
+{{#partial "content"}}
+
+   <hr>
+    <div class="container">
+        <h1>Success!</h1>
+
+        The staff member(s) with the below details has been added.
+
+        {{#if division}}
+            {{#each division }}
+                <div id="updated_details">
+                    <p>Name: {{ staff_name }}</p>
+                    <p>Department: {{ department }}</p>
+                    <p>Section: {{ section }}</p>
+                    <p>Role: {{ role }}</p>
+                    <p>Responsibilities: {{ responsibilities }}</p>
+                </div>
+            {{/each}}
+        {{else}}
+            <p>No staff added yet!</p>
+        {{/if}}
+
+
+
+        <a href="/"><button type="submit" class="btn btn-success">Go Back!</button></a>
+    </div>
+    <hr>
+{{/partial}}
+
+{{> layout.hbs}}
