@@ -57,11 +57,6 @@ public class App{
 //            return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
-        //get: show created departments
-//        get("/posts", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            return new ModelAndView(model, "index.hbs");
-//        }, new HandlebarsTemplateEngine());
 
         //get: delete all departments
         get("/posts/:id/delete", (req, res) -> {
@@ -80,15 +75,7 @@ public class App{
         }, new HandlebarsTemplateEngine());
 
 //        //get: show all departments
-//        get("/posts", (request, response) -> {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            ArrayList<Division> divisions = Division.getAll();
-//            model.put("divisions", divisions);
-//            return new ModelAndView(new HashMap(), "department-detail.hbs");
-//        }, new HandlebarsTemplateEngine());
 
-
-        //get: show a form to update a post
         get("/posts/:id/update", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             int idOfDivisionToEdit = Integer.parseInt(req.params("id"));
@@ -105,36 +92,6 @@ public class App{
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
 
-
-        //get: show new department form
-//        get("/posts/new/staff", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            return new ModelAndView(model, "form.hbs");
-//        }, new HandlebarsTemplateEngine());
-
-//        post: process new staff form
-//        post("/posts/new/staff", (request, response) -> {
-//            Map<String, Object> model = new HashMap<String, Object>();
-//            //int id = Integer.parseInt(request.queryParams("id"));
-//            String name = request.queryParams("staff_name");
-//            String department = request.queryParams("department");
-//            String section = request.queryParams("section");
-//            String role = request.queryParams("role");
-//            String responsibilities = request.queryParams("responsibilities");
-//            System.out.println(department);
-//            Division division = new Division(department,section, name, role, responsibilities);
-////            response.redirect("staff-detail.hbs");
-////            return null;
-//            model.put("division", division);
-//            return new ModelAndView(model, "success.hbs");
-//        }, new HandlebarsTemplateEngine());
-
-//        get("/posts/all-staff", (request, response) -> {
-//            Map<String, Object> model = new HashMap<>();
-//            ArrayList<Division> divisions = Division.getAll();
-//            model.put("division", divisions);
-//            return new ModelAndView(model, "staff-detail.hbs");
-//        }, new HandlebarsTemplateEngine());
 
 
     }
