@@ -32,18 +32,6 @@ public class DivisionTest {
         assertEquals(1, myDivision.getId());
     }
 
-//    @Test
-//    public void findReturnsCorrectDivision() throws Exception {
-//        Division division = setupNewDivision();
-//        assertEquals(1, Division.findById(division.getId()).getId());
-//    }
-//
-//    @Test
-//    public void findReturnsCorrectDivisionWhenMoreThanOneDivisionExists() throws Exception {
-//        Division division = setupNewDivision();
-//        Division otherDivision = new Division("RNIO", "Power",1800,"James K.","Support Engineer","Checks on power maintenance works.");
-//        assertEquals(2, Division.findById(otherDivision.getId()).getId());
-//    }
 
     @Test
     public void getDepartment() {
